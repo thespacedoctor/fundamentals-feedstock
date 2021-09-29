@@ -1,13 +1,13 @@
 {% set name = "fundamentals" %}
-{% set version = "2.3.7" %}
+{% set version = "2.3.8" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: a4d2b539671687d2e27f94b6790fe0eb36ff08745c0b72f70fb752f42d5fd7ea
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dd224478e043aa1374324911fb5a4edaf2553e1bf1a4990ffe881550a19a2df2
 
 build:
   number: 0
@@ -16,7 +16,7 @@ build:
     - mysqlSucker=fundamentals.mysql.directory_script_runner:main
     - yaml2db=fundamentals.mysql.yaml_to_database:main
     - sqlite2mysql=fundamentals.mysql.sqlite2mysql:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -48,13 +48,13 @@ test:
     - sqlite2mysql --help
 
 about:
-  home: "https://github.com/thespacedoctor/fundamentals"
+  home: https://github.com/thespacedoctor/fundamentals
   license: GPL3
   license_family: GPL3
   license_file: LICENSE
-  summary: "Some fundamental tools required by most self-respecting python-packages bundled in one place. Very opinionated project setup tools including logging, plain-text settings files and database connections."
-  doc_url: "https://fundamentals.readthedocs.io"
-  dev_url: "https://github.com/thespacedoctor/fundamentals"
+  summary: Some fundamental tools required by most self-respecting python-packages bundled in one place. Very opinionated project setup tools including logging, plain-text settings files and database connections.
+  doc_url: https://fundamentals.readthedocs.io
+  dev_url: https://github.com/thespacedoctor/fundamentals
 
 extra:
   recipe-maintainers:
