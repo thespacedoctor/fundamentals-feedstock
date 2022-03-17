@@ -5,7 +5,7 @@ Home: https://github.com/thespacedoctor/fundamentals
 
 Package license: GPL3
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fundamentals-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fundamentals-feedstock/blob/main/LICENSE.txt)
 
 Summary: Some fundamental tools required by most self-respecting python-packages bundled in one place. Very opinionated project setup tools including logging, plain-text settings files and database connections.
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13994&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fundamentals-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13994&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fundamentals-feedstock?branchName=main">
       </a>
     </td>
   </tr>
