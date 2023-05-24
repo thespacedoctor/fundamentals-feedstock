@@ -1,11 +1,11 @@
-About fundamentals
-==================
+About fundamentals-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fundamentals-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/thespacedoctor/fundamentals
 
-Package license: GPL3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fundamentals-feedstock/blob/main/LICENSE.txt)
+Package license: GPL-3.0-only
 
 Summary: Some fundamental tools required by most self-respecting python-packages bundled in one place. Very opinionated project setup tools including logging, plain-text settings files and database connections.
 
