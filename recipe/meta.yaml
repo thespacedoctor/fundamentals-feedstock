@@ -51,8 +51,8 @@ test:
 about:
   home: https://github.com/thespacedoctor/fundamentals
   license: GPL-3.0-only
-	license_family: GPL3
-	license_file: LICENSE
+  license_family: GPL3
+  license_file: LICENSE
   summary: Some fundamental tools required by most self-respecting python-packages bundled in one place. Very opinionated project setup tools including logging, plain-text settings files and database connections.
   doc_url: https://fundamentals.readthedocs.io
   dev_url: https://github.com/thespacedoctor/fundamentals
