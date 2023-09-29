@@ -1,5 +1,5 @@
 {% set name = "fundamentals" %}
-{% set version = "2.4.1" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9b277f46297b98606b885b2f047ebe20a361a4724b21da48e55c8b5cea4f26c
+  sha256: 73f3e9d042d01c237437b1d7135562a5faf81707eb57771cb57c83b1e2b5e026
 
 build:
   number: 0
