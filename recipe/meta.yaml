@@ -35,17 +35,6 @@ requirements:
 test:
   imports:
     - fundamentals
-    - fundamentals.commonutils
-    - fundamentals.download
-    - fundamentals.files
-    - fundamentals.mysql
-    - fundamentals.nose2_plugins
-    - fundamentals.renderer
-    - fundamentals.stats
-  commands:
-    - mysqlSucker --help
-    - yaml2db --help
-    - sqlite2mysql --help
 
 about:
   home: https://github.com/thespacedoctor/fundamentals
