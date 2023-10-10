@@ -1,13 +1,13 @@
 {% set name = "fundamentals" %}
-{% set version = "2.4.1" %}
+{% set version = "2.6.0" %}
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9b277f46297b98606b885b2f047ebe20a361a4724b21da48e55c8b5cea4f26c
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: 0a305dd8f194218ff1aaa1805ff8cb824602ff36f8d1d8e6e821f51fe412f422
 
 build:
   number: 0
@@ -23,7 +23,6 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - coloredlogs
     - docopt
     - future
     - psutil
