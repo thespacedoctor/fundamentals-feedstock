@@ -22,7 +22,7 @@ requirements:
   host:
     - pip
     - python >=3.9
-    - wheels
+    - wheel
     - setuptools
   run:
     - docopt
