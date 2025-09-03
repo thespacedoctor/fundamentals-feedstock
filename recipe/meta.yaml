@@ -1,5 +1,7 @@
 {% set name = "fundamentals" %}
 {% set version = "2.7.3" %}
+{% set python_min = "3.11" %}
+
 
 package:
   name: {{ name|lower }}
@@ -16,19 +18,19 @@ build:
     - mysqlSucker=fundamentals.mysql.directory_script_runner:main
     - yaml2db=fundamentals.mysql.yaml_to_database:main
     - sqlite2mysql=fundamentals.mysql.sqlite2mysql:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - python >=3.9
     - wheel
     - setuptools
   run:
+    - python {{ python_min }}
     - docopt
     - future
     - psutil
-    - python >=3.8
     - python-dateutil
     - pyyaml
     - requests
@@ -37,6 +39,8 @@ requirements:
 test:
   imports:
     - fundamentals
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/thespacedoctor/fundamentals
