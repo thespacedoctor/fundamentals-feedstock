@@ -35,7 +35,7 @@ requirements:
     - requests
     - python-daemon
     - tqdm
-    - pyreadline3
+    - pyreadline3 # [win]
 
 test:
   imports:
