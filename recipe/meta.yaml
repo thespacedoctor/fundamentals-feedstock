@@ -33,6 +33,7 @@ requirements:
     - pyyaml
     - requests
     - python-daemon
+    - tqdm
 
 test:
   imports:
